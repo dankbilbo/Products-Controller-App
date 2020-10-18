@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .td{
+                text-align: center;
+        }
+        .td2{
+            border : white;
+        }
+        .td1 {
+            text-align: left;
+        }
+        .tr1:hover{
+            background-color: aquamarine;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<p style="font-size: x-large"><b>Add New Product</b></p>
+<input id="productAdded" type="text" placeholder="New Product">
+<button id="add" onclick="addProduct()" style="cursor: pointer;">ADD</button>
+<br><br>
+<input id="productEdited" style="visibility: hidden" type="text" placeholder="">
+<button id="confirm"style="cursor:pointer; visibility: hidden" onclick="confirmEdit()">Confirm</button>
+<button id="cancel"style="cursor: pointer; visibility: hidden" onclick="cancelEdit()">Cancel</button>
+<p style="font-size: x-large"><b>Display All Product</b></p>
+<p id="table"> </p>
+<script src="productsManagement.js"></script>
+</body>
+</html>

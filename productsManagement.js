@@ -33,7 +33,7 @@ function addProduct() {
 }
 
 function displayProducts() {
-    let str = "<table width='50%'><tr><td><b>ProductName</b></td><td><td><td class='td2' align='center'>9 products</td></tr>";
+    let str = "<table width='50%'><tr><td><b>ProductName</b></td><td><td><td class='td2' align='center' style='color: red'>9 products</td></tr>";
     for (let i = 0; i < arr.length; i++) {
         str += `<tr id='${i}tr' class="tr1">`;
         for (let j = 0; j < 4; j++) {
